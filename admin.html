@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Адмін-панель</title>
+</head>
+<body>
+    <h1>Адмін-панель</h1>
+
+    <form id="login-form">
+        <label>
+            Пароль адміністратора
+            <input id="password" type="password" required>
+        </label>
+        <button type="submit">Увійти</button>
+    </form>
+
+    <section id="panel" hidden>
+        <form id="band-form">
+            <label>
+                Назва гурту
+                <input id="name" type="text" required>
+            </label>
+            <label>
+                Посилання Spotify
+                <input id="spotify-url" type="url"
+                    placeholder="https://open.spotify.com/artist/..." required>
+            </label>
+            <button type="submit">Додати гурт</button>
+        </form>
+        <button id="logout" type="button">Вийти</button>
+        <ul id="band-list"></ul>
+    </section>
+
+    <p id="message"></p>
+    <script src="admin.js"></script>
+</body>
+</html>
